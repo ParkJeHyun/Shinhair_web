@@ -3,3 +3,5 @@
 /server/build/*
 /server/.idea/*
 *.iml
+*.war
+*.war
