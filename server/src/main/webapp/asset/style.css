@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+* {
+	font-family: 'Nanum Gothic'
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Nanum Gothic' !important
+}
+
+.dd {
+	max-width: 100% !important;
+}
+
+/*
+.dd input {
+	display: inline-block;
+	width: 50%;
+}
+*/
+.dd-item .close {
+	float: right !important;
+}
+
+.dd-item>.close:before {
+	content: '×';
+}
+
+.dd3-handle {
+	height: 100% !important;
+}
+
+.x-content-placeholder {
+	width: 64px;
+	height: 64px;
+}
+
+.todo>li>:first-child {
+	border-right: none;
+}
+
+.todo>li>p {
+	margin-left: 10px;
+	border-left: none;
+}
+
+.x-template {
+	display: none;
+}
+
+.dt-toolbar, .dt-toolbar-footer {
+	background: #ffffff;
+}
+
+.dataTables_paginate .previous a {
+	font-family: FontAwesome;
+}
+
+.dataTables_paginate .next a {
+	font-family: FontAwesome;
+}
+
+#grid .selected td {
+	background: #d9edf7;
+}
+
+#grid .selected:before {
+	content: initial;
+}
+
+#grid .selected:after {
+	content: initial;
+}
