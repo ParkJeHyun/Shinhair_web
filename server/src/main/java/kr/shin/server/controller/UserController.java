@@ -84,7 +84,7 @@ public class UserController {
     @RequestMapping(value = "/delete/{key}", method = RequestMethod.DELETE)
     public String deleteUser(@PathVariable("key") Integer key) {
 
-        
+
         User removeUser = userDao.getUser(key);
         userDao.deleteUser(removeUser);
 
