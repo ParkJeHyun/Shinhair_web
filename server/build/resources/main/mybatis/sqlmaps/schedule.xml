@@ -1,0 +1,17 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kr.shin.server.daos.WorkScheduleDao"><!-- namespace에서 interface로 정의된 DAO를 정확히 명시해주어야 한다 -->
+
+    <select id="getWorkSchedule" parameterType="kr.shin.server.artifacts.Query" resultType="kr.shin.server.artifacts.WorkSchedule">
+        SELECT
+        d_id,
+        w_id,
+        date
+        FROM
+        workschedule
+        WHERE
+        d_id = {#deginer},
+        date = {#date}
+    </select>
+</mapper>

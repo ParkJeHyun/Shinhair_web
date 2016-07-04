@@ -1,9 +1,10 @@
 *.class
 .idea/*
-/server/.idea/*
-/server/build/*
-/server/.idea/*
-/apache-tomcat-8.0.33/apache-tomcat-8.0.33/bin/log/*
-/apache-tomcat-8.0.33/apache-tomcat-8.0.33/webapps/*
+server/.idea/*
+server/build/*
+server/.idea/*
+apache-tomcat-8.0.33/apache-tomcat-8.0.33/bin/log/*
+apache-tomcat-8.0.33/apache-tomcat-8.0.33/webapps/*
 *.iml
 *.war
+*.class
