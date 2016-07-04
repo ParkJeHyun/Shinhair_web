@@ -3,8 +3,7 @@
 /server/.idea/*.*
 /server/build/*.*
 /server/.idea/*.*
-/apache-tomcat-8.0.33/apache-tomcat-8.0.33/bin/log/*.*
-/apache-tomcat-8.0.33/apache-tomcat-8.0.33/webapps/*.*
+/apache-tomcat-8.0.33/*.*
 *.iml
 *.war
 *.class
