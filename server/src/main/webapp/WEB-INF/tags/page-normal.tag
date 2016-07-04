@@ -151,7 +151,6 @@
 						</li>
 					</ul>
 				</li>
-<<<<<<< HEAD
 				<li>
 					<a href="#"><i class="fa fa-lg fa-fw fa-leaf"></i> <span class="menu-item-parent">스케쥴</span></a>
 					<ul>
@@ -163,8 +162,6 @@
 						</li>
 					</ul>
 				</li>
-=======
->>>>>>> b93c7d8ab6f6dfe131ead997b3fd62068613509f
 			</ul>
 		</nav>
 		</ul>
