@@ -38,8 +38,19 @@ public class WorkTimeController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    public Boolean add(@ModelAttribute WorkTime workTime) {
+    public String add(@ModelAttribute WorkTime workTime) {
+
         int res = workTimeDao.addWorkTime(workTime);
-        return (res < 1);
+
+        return "admin/worktime/worktime_form";
+    }
+
+    @RequestMapping(value = "/add", method = RequestMethod.PUT)
+    public String modify(@ModelAttribute WorkTime workTime) {
+        System.out.println("key : " + workTime.getW_id() + " name : " + workTime.getName() + " StartTime : " + workTime.getStart_time());
+
+        workTimeDao.modifyWorkTime(workTime);
+
+        return "admin/worktime/worktime_form";
     }
 }

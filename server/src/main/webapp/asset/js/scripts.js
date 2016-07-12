@@ -44,5 +44,5 @@
         for (var i = 0; i < arrayData.length; i++)
             $(Mustache.render(html, arrayData[i])).removeClass('x-template').appendTo(container);
     };
-    
+
 })(jQuery);

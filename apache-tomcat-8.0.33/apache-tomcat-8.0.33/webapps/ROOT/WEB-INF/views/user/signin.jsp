@@ -93,52 +93,53 @@
     </form>
 </div>
 <script type="text/javascript">
-   // $(function() {
-        $('#joinForm').validate({
-            submitHandler: function () {
-                var f = confirm("회원가입을 하시겠습니까?");
-                if (f) {
-                    return true;
-                }
-                else {
-                    return false;
-                }
-            },
-            rules: {
-                id: {
-                    required: true,
-                    minlength: 5,
-                    remote: "checkID"
-                },
-                password: {
-                    required: true,
-                    minlength: 6
-                },
-                upwc: {
-                    required: true,
-                    equalTo: "#password"
-                },
-                name: {
-                    required: true,
-                    minlength: 2
-                }
-            },
-            messages: {
-                id: {
-                    required: "ID를 입력해주세요.",
-                    //remote: "checkID"
-                },
-                password: {
-                    required: "비밀번호를 입력해주세요.",
-                },
-                upwc: {
-                    required: "비밀번호를 재입력해주세요.",
-                },
-                name: {
-                    required: "성함을 입력해주세요.",
-                }
+    // $(function() {
+
+    $('#joinForm').validate({
+        submitHandler: function () {
+            var f = confirm("회원가입을 하시겠습니까?");
+            if (f) {
+                return true;
             }
-        });
+            else {
+                return false;
+            }
+        },
+        rules: {
+            id: {
+                required: true,
+                minlength: 5,
+                remote: "checkID"
+            },
+            password: {
+                required: true,
+                minlength: 6
+            },
+            upwc: {
+                required: true,
+                equalTo: "#password"
+            },
+            name: {
+                required: true,
+                minlength: 2
+            }
+        },
+        messages: {
+            id: {
+                required: "ID를 입력해주세요.",
+                //remote: "checkID"
+            },
+            password: {
+                required: "비밀번호를 입력해주세요.",
+            },
+            upwc: {
+                required: "비밀번호를 재입력해주세요.",
+            },
+            name: {
+                required: "성함을 입력해주세요.",
+            }
+        }
+    });
     //})
 </script>
 </body>

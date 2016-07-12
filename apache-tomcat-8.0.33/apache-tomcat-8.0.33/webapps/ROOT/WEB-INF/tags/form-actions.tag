@@ -10,7 +10,7 @@
 <div class="form-actions">
     <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-primary" id="add" type="submit">저장</button>
+            <button class="btn btn-primary" id="save" type="button">저장</button>
             <a href="javascript:window.history.back();" class="btn btn-default">취소</a>
         </div>
     </div>

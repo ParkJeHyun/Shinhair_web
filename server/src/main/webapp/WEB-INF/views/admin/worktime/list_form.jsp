@@ -23,7 +23,7 @@
             <tbody>
             <c:forEach var="worktime" items="${worktimes}">
                 <tr align="center">
-                    <td width="100px">${worktime.name}</td>
+                    <td width="100px"><a href="/admin/worktime/${worktime.w_id}"/>${worktime.name}</td>
                     <td width="100px">${worktime.start_time}</td>
                     <td width="100px">${worktime.end_time}</td>
                 </tr>

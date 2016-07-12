@@ -151,6 +151,17 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="#"><i class="fa fa-lg fa-fw fa-leaf"></i> <span class="menu-item-parent">스케쥴</span></a>
+					<ul>
+						<li <c:if test="${__menu1 == 'workschedule' && __menu2 == 'listform' && param.mode != 'root'}">class="active"</c:if>>
+							<a href="/admin/workschedule/listform">스케쥴 관리</a>
+						</li>
+						<li <c:if test="${__menu1 == 'workschedule' && __menu2 == 'addform' && param.mode != 'root'}">class="active"</c:if>>
+							<a href="/admin/workschedule/addform">스케쥴 등록</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		</ul>

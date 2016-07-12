@@ -13,12 +13,30 @@
         work_time
     </select>
 
+    <select id="getWorkTime" parameterType="string" resultType="kr.shin.server.artifacts.WorkTime">
+        SELECT
+        w_id,
+        name,
+        start_time,
+        end_time
+        FROM
+        work_time
+        WHERE
+        w_id = #{key}
+    </select>
+
     <insert id="addWorkTime" parameterType="kr.shin.server.artifacts.WorkTime" >
         INSERT
         INTO work_time (name,start_time,end_time)
         VALUES
         ( #{name},#{start_time},#{end_time})
     </insert>
+
+    <update id="modifyWorkTime" parameterType="kr.shin.server.artifacts.WorkTime">
+        UPDATE work_time
+        SET name = #{name}, start_time = #{start_time}, end_time = #{end_time}
+        WHERE w_id = #{w_id}
+    </update>
 
     <delete id="removeWorkTime" parameterType="string">
         DELETE
